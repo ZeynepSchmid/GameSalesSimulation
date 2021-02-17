@@ -1,11 +1,11 @@
-﻿using System;
+using System;
 namespace GameWebSiteSimulation
 {
     public interface IClientManager
     {
-        public void addClient(Client client);
-        public void deleteClient(Client client);
-        public void showAll();
+        public void Add(object o);
+        public void Delete(object o);
+        public void ShowAll();
 
     }
 }
