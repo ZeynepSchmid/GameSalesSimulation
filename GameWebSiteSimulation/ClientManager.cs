@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 namespace GameWebSiteSimulation
 {
@@ -11,17 +11,17 @@ namespace GameWebSiteSimulation
         {
             clients = new List<Client>();
         }
-        public void addClient(Client client) {
-            clients.Add(client);
+        public void Add(object client) {
+            clients.Add((Client)client);
             Console.WriteLine("Client added");
         }
-        public void deleteClient(Client client) {
-            clients.Remove(client);
+        public void Delete(object client) {
+            clients.Remove((Client)client);
             Console.WriteLine("Client deleted");
         }
-        public void showAll() {
+        public void ShowAll() {
             foreach (Client c in clients) {
-                Console.WriteLine( c.getFirstName() + " " + c.getName() + " " + c.getAge() + " years old.");
+                Console.WriteLine( c.firstName + " " + c.name + " " + c.getAge() + " years old.");
             }
         }
     }
